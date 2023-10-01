@@ -1,0 +1,135 @@
+/*Common*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+}
+
+a:hover {
+color:#00BF78;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+.header {
+    background: url(./images/Header/bg.jpg) cover no-repeat;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    gap: 0px 28px;
+}
+
+.navigation-link {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.contact-number {
+    font-size: 18px;
+    font-weight: 500;
+    gap: 8px 0;
+}
+
+.header-content {
+    min-height: 510px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.header-desk {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-btn {
+    margin-top: 50px;
+    width: fit-content;
+    border-radius: 24px;
+    border: none;
+    background-color: #FB9475;
+    padding: 17px 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-image {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+}
+
+.header-image img {
+    width: 524px;
+    height: 510px; 
+}
+
+.social {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px 0;
+}
+
+.social img {
+    cursor: pointer;
+}
