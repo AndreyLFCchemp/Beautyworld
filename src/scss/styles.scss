@@ -57,10 +57,14 @@ color:#00BF78;
     padding: 10px 20px;
 }
 
+.btn_big {
+    min-width: 375px;
+}
+
 /*Header*/
 
 .header {
-    background: url(./images/Header/bg.jpg) cover no-repeat;
+    background: url(../images/Header/back.png) no-repeat;
 }
 
 .header-top {
@@ -161,8 +165,7 @@ color:#00BF78;
 }
 
 .about__discription {
-    width: 569.541px;
-    height: 96.26px;
+    max-width: 569.541px;
     margin-top: 30px;
     color: #333;
     font-size: 20px;
@@ -171,8 +174,7 @@ color:#00BF78;
 }
 
 .about__sub-discription {
-    width: 540px;
-    height: 150px;
+    max-width: 540px;
     margin-top: 16px;
     color: #333;
     font-size: 16px;
@@ -184,12 +186,28 @@ color:#00BF78;
     position: absolute;
     bottom:0px; 
     right:0px;
-}
-
-.about__video img {
     width: 445px;
     height: 296.332px;
+
+    &-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
 }
+
 
 .about__heading {
     display: flex;
@@ -207,7 +225,7 @@ color:#00BF78;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    max-width: 350px;
     gap: 30px;
 }
 
@@ -231,7 +249,6 @@ color:#00BF78;
 }
 
 /* popular */
-
 
 .popular__header {
     margin-top: 100px;
@@ -278,7 +295,6 @@ color:#00BF78;
 
 /* Price */
 
-
 .price-header {
     margin-top: 100px;
     color: #333;
@@ -299,7 +315,10 @@ color:#00BF78;
     color: #333;
     font-size: 14px;
     font-weight: 500;
+}
 
+.price-topics {
+    margin-bottom: 100px;
 }
 
 .price-top {
@@ -336,8 +355,12 @@ color:#00BF78;
 
 /* Masters */
 
+.masters {
+    background: #F8F6F7;
+    padding: 80px 0;
+}
+
 .masters-logo {
-    margin-top: 180px;
     color: #333;
     font-size: 48px;
     font-weight: 700;
@@ -363,6 +386,25 @@ color:#00BF78;
     align-items: left;
     text-align: left;
     max-width: 255px;   
+
+    &:hover::after {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        border-radius: 5px;
+    } 
+}
+
+.masters-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .masters__icon {
@@ -389,6 +431,238 @@ color:#00BF78;
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+/* Works */
+
+.works__header {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 59px;
+}
+
+.works__header-name {
+        color: #333;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.works__paginator {
+    display: flex;
+    gap: 16px;
+    max-width: 96px;
+    cursor: pointer;
+}
+
+.works__icon {
+    width: 338px;
+    height: 338px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.works__examples {
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+}
+
+.works-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Brands */
+
+.brands-text {
+    margin-top: 100px;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bands-list {
+    margin-top: 40px;
+    max-width: 920px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 100px;
+}
+
+.brands__slot {
+  max-width: 160px; 
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0 30px;
+}
+
+.brands-icon1 {
+    width: 92.857px;
+    height: 65px;
+    filter: opacity(40%)
+}
+
+.brands-icon2 {
+    width: 120px;
+    height: 64.865px;
+    filter: opacity(40%)
+}
+
+.brands-icon3 {
+    width: 108.074px;
+    height: 40px;
+    filter: opacity(40%)
+}
+
+.brands-icon4 {
+    width: 113.744px;
+    height: 60px;
+    filter: opacity(40%)
+}
+
+.brands-icon5 {
+    width: 135px;
+    height: 36px;
+    filter: opacity(40%)
+}
+
+/* Registration */
+
+.registration {
+    background: #F8F6F7;
+    padding: 80px 0;
+}
+
+.registration-twopoint {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-contacts {
+    flex-direction: column;
+}
+
+.registration-social {
+    display: flex;
+}
+
+.registration-header {
+    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.registration-discription {
+    margin-top: 32px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.registration-number {
+    margin-top: 20px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.registration-link {
+    color: #278AFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: underline; 
+}
+
+.registration-subdiscription {
+    margin-top: 32px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.registration-social {
+    margin-top: 12px;
+    gap: 24px;
+}
+
+.reg-block {
+    display: flex;
+    width: 445px;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.reg-header {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.reg-discription {
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.reg-input {
+position: relative;
+}
+
+.reg-name {
+    min-width: 375px;
+    padding: 15px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    filter: opacity(40%)
+
+}
+
+.reg-tel {
+    margin: 20px 0px;
+    min-width: 375px;
+    padding: 15px 16px;
+    border-radius: 4px;
+    filter: opacity(40%)
+}
+
+.reg-labl {
+position: absolute;
+top: 50%;
+left: 56px;
+transform: translate(-50%, -50%);
+display: flex;
+text-align: start;
+cursor: pointer;
+filter: opacity(40%)
+}
+
+.reg-subdiscription {
+    margin-top: 16px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.reg-personal {
+    color: #278AFF;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration-line: underline;    
 }
 
 /* Footer*/
