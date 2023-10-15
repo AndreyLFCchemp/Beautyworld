@@ -145,12 +145,22 @@
         flex-wrap: wrap;
     }
 
-    
+    .works__examples {
+        gap: 0;
+    }
 
-.bands-list {
+    
+    .registration-contacts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+.brands-list {
     flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 10px 0px;
 }
 
 }
